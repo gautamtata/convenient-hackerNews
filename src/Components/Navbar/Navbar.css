@@ -1,0 +1,21 @@
+.navigation-bar {
+    background-color: #ff6600
+}
+
+.nav-logo {
+    color: #fff
+}
+
+.link-style {
+    color: #fff;
+    text-decoration: none
+}
+
+.logo {
+    background: #ff6600;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
