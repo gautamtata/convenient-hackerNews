@@ -1,0 +1,15 @@
+.news-item {
+    padding: 0px;
+    padding-top: 13px;
+    padding-right: 15px;
+    color: #828282;
+}
+
+.news-title {
+    padding-right: 80px;
+    font-weight: 600
+}
+
+a,td {
+    color: #828282
+}

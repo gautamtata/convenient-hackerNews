@@ -1,5 +1,7 @@
 import React from 'react';
 import timeago from 'epoch-timeago';
+import './Stories.css'
+import TestComponent from '../../testComponent'
 
 const Stories = ({ state }) => {
   return (
@@ -7,26 +9,20 @@ const Stories = ({ state }) => {
       {state.map(
         ({ item, author, title, score, comments_count, time, url }) => (
           <tr key={item}>
-            <td
-              style={{
-                padding: '0px',
-                paddingTop: '13px',
-                paddingRight: '15px',
-                color: '#828282',
-              }}
-            >
+            <td className="news-item">
               &nbsp; Points {score}
-              <i className="fas fa-angle-up"></i>
+              <i className="fas fa-angle-up fa-7x"></i>
+              
             </td>
-            <td style={{ paddingRight: '80px', fontWeight: '600' }}>
+            <td className="news-title">
               <a href={url} target="_blank" rel="noopener noreferrer">
                 {title}
               </a>
               <br />
               <a
                 href={`https://news.ycombinator.com/user?id=${author}`}
+                onClick
                 target="_blank"
-                style={{ color: '#828282' }}
                 rel="noopener noreferrer"
               >
                 Author : {author}
@@ -40,7 +36,6 @@ const Stories = ({ state }) => {
                     .split(/[/?#]/)[0]
                 }`}
                 target="_blank"
-                style={{ color: '#828282' }}
                 rel="noopener noreferrer"
               >
                 {' '}
@@ -53,22 +48,23 @@ const Stories = ({ state }) => {
               </a>
             </td>
             <React.Fragment >
-              <td style={{ color: '#828282' }}>
+              <td>
                 <i className="fas fa-clock"> {timeago(time * 1000)}</i>
               </td>
-              <td style={{ color: '#828282' }}>
+              <td>
                 <i className="far fa-comment-alt" />{' '}
                 <a
                   href={`https://news.ycombinator.com/item?id=${item}`}
                   target="_blank"
-                  style={{ color: '#828282' }}
                   rel="noopener noreferrer"
                 >
                   Comments {comments_count}
                 </a>
               </td>
             </React.Fragment>
+            
           </tr>
+          
         )
       )}
     </>
