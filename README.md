@@ -43,11 +43,15 @@ npm start
 
 
 ## How to use?
-1. Landing on the Homepage, it's the same interface as the news.ycombinator.com
-2. Click on one of the news articles that you are interested in reading.
-3. Clicking on of the articles renders the webpage onto right side of the screen.
-4. The Pane is draggable which allows you to resize the screen as needed.
-5. Clicking on another news article will render that webpage.
+- Landing on the Homepage, it's the same interface as the news.ycombinator.com
+
+- Click on one of the news articles that you are interested in reading.
+
+- Clicking on of the articles renders the webpage onto right side of the screen.
+
+- The Pane is draggable which allows you to resize the screen as needed.
+
+- Clicking on another news article will render that webpage.
 
 
 ## Credits
