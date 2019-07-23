@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 import axios from "axios";
 import Stories from "../Stories/Stories";
 import Loader from "../Loader/Loader";
+import './News.css'
 
 const News = props => {
   const [state, setState] = useState([]);
