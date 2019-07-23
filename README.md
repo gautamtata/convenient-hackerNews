@@ -6,12 +6,15 @@ Hackernews is an amazing platform to get the best news articles for CS and entre
 
 
 ## Code style
-[Airbnb-React-JSX](https://github.com/airbnb/javascript/tree/master/react)
+- [Airbnb-React-JSX](https://github.com/airbnb/javascript/tree/master/react)
  
 ## Screenshots
 Include logo/demo screenshot etc.
 
 ## Tech/framework used
+<b>Built with</b>
+- [React.js](https://reactjs.org)
+
 - [React-Bootstrap](https://react-bootstrap.github.io/)
 
 - [Axios](https://github.com/axios/axios)
@@ -20,8 +23,6 @@ Include logo/demo screenshot etc.
 
 - [Netlify](https://www.netlify.com/)
 
-<b>Built with</b>
-- [React.js](https://reactjs.org)
 
 ## Features
 Different from other hackernews clones, this web application lets the user view news articles on the same screen as the hackernews main page.
