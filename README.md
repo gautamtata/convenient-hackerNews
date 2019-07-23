@@ -12,10 +12,13 @@ Hackernews is an amazing platform to get the best news articles for CS and entre
 Include logo/demo screenshot etc.
 
 ## Tech/framework used
-[React-Bootstrap](https://react-bootstrap.github.io/)
-[Axios](https://github.com/axios/axios)
-[React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
-[Netlify](https://www.netlify.com/)
+- [React-Bootstrap](https://react-bootstrap.github.io/)
+
+- [Axios](https://github.com/axios/axios)
+
+- [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
+
+- [Netlify](https://www.netlify.com/)
 
 <b>Built with</b>
 - [React.js](https://reactjs.org)
