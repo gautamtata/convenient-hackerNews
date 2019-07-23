@@ -51,10 +51,13 @@ npm start
 
 
 ## Credits
-[Inspiration : What I learned building a hackernews clone](https://codeburst.io/what-i-learned-writing-a-hacker-news-clone-494c8d49a9ae)
-[Vue.js Hackernews clone](https://vuejs.org/v2/examples/hackernews.html)
-[redux based hackernews](https://gitconnected.com/courses/learn-react-redux-tutorial-build-a-hacker-news-clone)
-[Hacker News](https://news.ycombinator.com/)
+- [Inspiration : What I learned building a hackernews clone](https://codeburst.io/what-i-learned-writing-a-hacker-news-clone-494c8d49a9ae)
+
+- [Vue.js Hackernews clone](https://vuejs.org/v2/examples/hackernews.html)
+
+- [redux based hackernews](https://gitconnected.com/courses/learn-react-redux-tutorial-build-a-hacker-news-clone)
+
+- [Hacker News](https://news.ycombinator.com/)
 
 
 ## License
