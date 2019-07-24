@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 import axios from "axios";
 import Stories from "../Stories/Stories";
 import Loader from "../Loader/Loader";
+import TestComponent from './testComponent'
 import './News.css'
 
 const News = props => {
@@ -57,7 +58,7 @@ const News = props => {
   useEffect(() => {
     // function executes here ,calling two async function
     getData(checkRoute(), 0, 20).then(arr => {
-      getDeatils(arr).then(item =>
+      getDetails(arr).then(item =>
         formatComponent(item, () => {
           props.hideLoader();
         })
@@ -80,7 +81,7 @@ const News = props => {
   };
 
   //fetching data from those ids and storing only the necessary datas in an array
-  const getDeatils = async function(arr) {
+  const getDetails = async function(arr) {
     const promises = arr.map(async item => {
       const { data } = await axios.get(
         `https://hacker-news.firebaseio.com/v0/item/${item}.json?print=pretty`
@@ -105,7 +106,7 @@ const News = props => {
   const showMoreContent = () => {
     setLoading(true);
     getData(checkRoute(), count, count + 20).then(arr => {
-      getDeatils(arr).then(item =>
+      getDetails(arr).then(item =>
         formatComponent(item, () => {
           setCount(count + 20);
           setLoading(false);
@@ -132,6 +133,7 @@ const News = props => {
             <table className="table">
               <tbody>
                 <Stories state={state} />
+                <TestComponent state={state} />
               </tbody>
             </table>
           </div>

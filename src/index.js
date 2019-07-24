@@ -4,7 +4,7 @@ import './index.css';
 import SplitterLayout from 'react-splitter-layout'
 import 'react-splitter-layout/lib/index.css'
 import App from './App';
-import TestComponent from './testComponent'
+import TestComponent from './Components/News/testComponent'
 import * as serviceWorker from './serviceWorker';
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";

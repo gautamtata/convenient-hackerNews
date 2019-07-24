@@ -1,7 +1,7 @@
 import React from 'react';
 import timeago from 'epoch-timeago';
 import './Stories.css'
-import TestComponent from '../../testComponent'
+
 
 const Stories = ({ state }) => {
   return (
@@ -21,7 +21,6 @@ const Stories = ({ state }) => {
               <br />
               <a
                 href={`https://news.ycombinator.com/user?id=${author}`}
-                onClick
                 target="_blank"
                 rel="noopener noreferrer"
               >
