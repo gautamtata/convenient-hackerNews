@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-ReactDOM.render( <SplitterLayout>
+ReactDOM.render( <SplitterLayout percentage='50'>
     <App />
     <TestComponent />
 </SplitterLayout>

@@ -1,21 +1,27 @@
-import React from 'react';
-import timeago from 'epoch-timeago';
+import React from 'react'
+import timeago from 'epoch-timeago'
 import './Stories.css'
 
 
 const Stories = ({ state }) => {
+  
+  const handleClick = () => {
+    this.setState({
+      url : 'https://colah.github.io/posts/2015-09-Visual-Information/'
+    })
+  }
   return (
     <>
       {state.map(
         ({ item, author, title, score, comments_count, time, url }) => (
           <tr key={item}>
             <td className="news-item">
-              &nbsp; Points {score}
+              &nbsp Points {score}
               <i className="fas fa-angle-up fa-7x"></i>
               
             </td>
             <td className="news-title">
-              <a href={url} target="_blank" rel="noopener noreferrer">
+              <a href={url} onClick={handleClick} target="_blank" rel="noopener noreferrer">
                 {title}
               </a>
               <br />
@@ -67,6 +73,6 @@ const Stories = ({ state }) => {
         )
       )}
     </>
-  );
-};
-export default Stories;
+  )
+}
+export default Stories
