@@ -55,9 +55,15 @@ npm start
 
 - Clicking on another news article will render that webpage.
 
+## Problems
+- Currently, Embedding a webpage on your website is hard. Using iFrame, many websites block your request because of the Content-Security-Policy[https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy]. Due to this reason, many websites don't work and this limits what can/cannot be opened in the side pane.
+
+- Another alternative would be to fetch the data using AJAX and then display the response. But the issue I faced with this is, only getting the HTML response really limits the websites that use extensive JS/CSS.
+
 
 ## Credits
-- [Inspiration : What I learned building a hackernews clone](https://codeburst.io/what-i-learned-writing-a-hacker-news-clone-494c8d49a9ae)
+- [Inspiration :
+What I learned building a hackernews clone](https://codeburst.io/what-i-learned-writing-a-hacker-news-clone-494c8d49a9ae)
 
 - [Vue.js Hackernews clone](https://vuejs.org/v2/examples/hackernews.html)
 
