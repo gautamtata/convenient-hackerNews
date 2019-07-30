@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -11,17 +11,32 @@ const NavigationBar = ({ showLoader }) => {
         <span className="logo">Y</span> Convenient Hacker News
       </Navbar.Brand>
       <Nav className="mr-auto navbar2">
-        <Link style={linkStyle} to="/top">
-          <div>Top</div>
-        </Link>
+      <Dropdown className="dropdown">
+          <Dropdown.Toggle className="dropdown-button" variant="success" id="dropdown-basic">
+            <span>News</span>
+          </Dropdown.Toggle>
 
-        <Link to="/new" style={linkStyle}>
-          <div> New</div>
-        </Link>
-
-        <Link to="/best" style={linkStyle}>
-          <div>Best</div>
-        </Link>
+          <Dropdown.Menu style={dropDownMenuStyle}>
+            <Dropdown.Item onClick={showLoader}>
+              <Link to="/top" style={{ textDecoration: "none", color: "#000" }}>
+                <div>Top</div>
+              </Link>
+            </Dropdown.Item>
+            <Dropdown.Item onClick={showLoader}>
+              <Link to="/new" style={{ textDecoration: "none", color: "#000" }}>
+                <div> New</div>
+              </Link>
+            </Dropdown.Item>
+            <Dropdown.Item onClick={showLoader}>
+              <Link
+                to="/best"
+                style={{ textDecoration: "none", color: "#000" }}
+              >
+                <div>Best</div>
+              </Link>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
 
         <Link to="/shows" style={linkStyle} className="navLink">
           <span>Show</span>
@@ -48,6 +63,11 @@ const linkStyle = {
   paddingLeft: '20px',
   paddingRight: '20px',
   transition: ' all 0.5s',
+};
+
+const dropDownMenuStyle = {
+  boxShadow: " 0px 2px 15px -7px rgba(0, 0, 0, 0.5)",
+  color: '#000'
 };
 
 export default NavigationBar;

@@ -7,9 +7,14 @@
 
 .news-title {
     padding-right: 80px;
-    font-weight: 600
+    font-weight: 600;
+    color: blue;
 }
 
-a,td {
-    color: #828282
+td a {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+
+
 }
+

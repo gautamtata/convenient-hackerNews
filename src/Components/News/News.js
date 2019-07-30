@@ -133,7 +133,7 @@ const News = props => {
             <table className="table">
               <tbody>
                 <Stories state={state} />
-                <TestComponent whateverthisis={state} />
+                
               </tbody>
             </table>
           </div>

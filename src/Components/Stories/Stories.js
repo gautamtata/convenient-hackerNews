@@ -2,6 +2,8 @@ import React from 'react'
 import timeago from 'epoch-timeago'
 import './Stories.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleUp, faUser, faLink, faClock, faCommentAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Stories = ({ state }) => {
   
@@ -16,12 +18,13 @@ const Stories = ({ state }) => {
         ({ item, author, title, score, comments_count, time, url }) => (
           <tr key={item}>
             <td className="news-item">
-              &nbsp Points {score}
-              <i className="fas fa-angle-up fa-7x"></i>
+              &nbsp;
+                {score} {' '}
+              <FontAwesomeIcon icon={faAngleUp} />
               
             </td>
             <td className="news-title">
-              <a href={url} onClick={handleClick} target="_blank" rel="noopener noreferrer">
+              <a href={url} target="_blank" rel="noopener noreferrer">
                 {title}
               </a>
               <br />
@@ -30,7 +33,7 @@ const Stories = ({ state }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Author : {author}
+              <FontAwesomeIcon icon={faUser} /> {' '} {author}
               </a>
               <br />
               <a
@@ -44,26 +47,24 @@ const Stories = ({ state }) => {
                 rel="noopener noreferrer"
               >
                 {' '}
-                URL :
+                <FontAwesomeIcon icon={faLink} /> {' '}
                 {url
                   .replace('http://', '')
                   .replace('https://', '')
                   .split(/[/?#]/)[0]
                   .replace('www.', '')}
-              </a>
+              </a> {' '}
+              <FontAwesomeIcon icon={faClock} /> {timeago(time * 1000)}
             </td>
             <React.Fragment >
               <td>
-                <i className="fas fa-clock"> {timeago(time * 1000)}</i>
-              </td>
-              <td>
-                <i className="far fa-comment-alt" />{' '}
+                <FontAwesomeIcon icon={faCommentAlt} /> {' '}
                 <a
                   href={`https://news.ycombinator.com/item?id=${item}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Comments {comments_count}
+                   {comments_count}
                 </a>
               </td>
             </React.Fragment>

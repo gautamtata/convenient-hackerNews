@@ -187,7 +187,7 @@ class TestComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      url : 'https://www.quantamagazine.org/'
+      url : 'https://medium.com/@filipvitas/how-to-bypass-slider-captcha-with-js-and-puppeteer-cd5e28105e3c'
     }
   }
    
