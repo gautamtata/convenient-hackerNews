@@ -1,6 +1,8 @@
 ## Convenient Hacker News
 A clone of hacker-news that implements a pane in the middle of screen. A user gets to read the news on the same screen after clicking a news article. The screen size is adjustable.
 
+[![Hackernews clone](https://github.com/gautamtata/convenient-hackerNews/blob/master/hackernews.gif)]
+
 ## Motivation
 Hackernews is an amazing platform to get the best news articles for CS and entrepreneurship. It has an extremely simplistic design and is very easy to navigate. One problem I was facing as a user was that whenever I click a news article a new webpage enters. I don't get the ability to look at the titles of other news articles and instead have to "go back" to the main-website. This solves that UI problem by presenting the news article on the same page alongside with the main news page.
 
